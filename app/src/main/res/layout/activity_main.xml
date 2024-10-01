@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/palacio_nacional"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de becas"
+            android:background="@drawable/custom_background_text"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/amlo"
+            android:layout_marginBottom="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edad"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_background_text"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textColor="@color/purple"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_age"
+                android:paddingHorizontal="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su edad"
+                android:drawableEnd="@drawable/custom_calendar_icon"
+                android:drawablePadding="12dp"
+                android:background="@drawable/custom_input"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promedio"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_background_text"
+                android:textColor="@color/purple"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/et_grade"
+                android:paddingHorizontal="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_input"
+                android:hint="Ingrese su promedio"
+                android:drawableEnd="@drawable/custom_numbers_icon"
+                android:drawablePadding="12dp"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular Beca"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@drawable/custom_background_text"
+            android:textColor="@color/purple"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            android:layout_marginHorizontal="30dp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="16dp" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
